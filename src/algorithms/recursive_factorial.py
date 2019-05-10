@@ -1,4 +1,4 @@
-def factorial(n):
+def recursive_factorial(n):
     """
     Recursively computes the factorial of input
 
@@ -10,4 +10,4 @@ def factorial(n):
         return 1
     # Otherwise multiply n by the result of factorial less one - the divide and conquer step
     else:
-        return n * factorial(n-1)
+        return n * recursive_factorial(n - 1)
