@@ -1,6 +1,6 @@
 import random
 
-from src.algorithms import bubblesort, insertionsort
+from src.algorithms.sorting import bubblesort, insertionsort
 
 
 def run_algorithm(algorithm):
