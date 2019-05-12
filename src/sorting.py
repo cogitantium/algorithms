@@ -54,8 +54,8 @@ def run_algorithm(algorithm):
     print()
 
 
-# run_algorithm(bubblesort.bubble_sort)
-# run_algorithm(insertionsort.insertion_sort)
-# run_algorithm(merge_sort)
-# run_algorithm(selection_sort)
+run_algorithm(bubblesort.bubble_sort)
+run_algorithm(insertionsort.insertion_sort)
+run_algorithm(merge_sort)
+run_algorithm(selection_sort)
 run_algorithm(quick_sort)
