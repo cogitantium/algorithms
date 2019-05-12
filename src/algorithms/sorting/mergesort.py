@@ -2,7 +2,9 @@ def merge(array, p, q, r):
     """
     This auxiliary function merges two sorted sequences in a 'combine' step of the merge-sort algorithm. Assuming
     that the sub-arrays array[p..q] and array[q+1..r] are in sorted order, the function merges them to form a single
-    sorted sub-array that replaces the current sub-array[p..r]
+    sorted sub-array that replaces the current sub-array[p..r]. Since a merge-call can, at most, take up space of
+    lower sub-array = ceil(n/2) and upper sub-array floor(n/2), where n is number of elements in array,
+    the space-complexity of merge is O(n) extra space.
 
     :param array: base-array reference for modifying in-place
     :param p: lower bound
