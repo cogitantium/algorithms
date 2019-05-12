@@ -2,10 +2,15 @@ import random
 
 from src.algorithms.sorting import bubblesort, insertionsort
 from src.algorithms.sorting.mergesort import merge_sort
+from src.algorithms.sorting.quicksort import quick_sort
 from src.algorithms.sorting.selectionsort import selection_sort
 
 
 def setup_merge_sort(array):
+    return [array, 0, len(array) - 1]
+
+
+def setup_quick_sort(array):
     return [array, 0, len(array) - 1]
 
 
@@ -30,9 +35,11 @@ def run_algorithm(algorithm):
 
     print("Unsorted:\t\t\t", unsorted_list)
 
-    # Call function
+    # Call function and setup call if necessary
     if algorithm is merge_sort:
         sorted_list = algorithm(*setup_merge_sort(unsorted_list))
+    elif algorithm is quick_sort:
+        sorted_list = algorithm(*setup_quick_sort(unsorted_list))
     else:
         sorted_list = algorithm(unsorted_list)
 
@@ -47,7 +54,8 @@ def run_algorithm(algorithm):
     print()
 
 
-run_algorithm(bubblesort.bubble_sort)
-run_algorithm(insertionsort.insertion_sort)
-run_algorithm(merge_sort)
-run_algorithm(selection_sort)
+# run_algorithm(bubblesort.bubble_sort)
+# run_algorithm(insertionsort.insertion_sort)
+# run_algorithm(merge_sort)
+# run_algorithm(selection_sort)
+run_algorithm(quick_sort)
