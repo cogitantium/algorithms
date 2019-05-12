@@ -1,4 +1,12 @@
 def selection_sort(array):
+    """
+    Selection sort iterates the array, and upon finding a lesser value in the sub-array array[i+1..n],
+    swaps the value with array[i]. Time complexity is O(n^2) since operations are ~(n-1)*(n/2) as it iterates the
+    array twice. Space complexity is O(n), as it sorts in-place.
+
+    :param array: the array to be sorted
+    :return: the sorted array
+    """
     # Iterate array[0..n-1]
     for i in range(0, len(array)):
         # Set first element to minimum

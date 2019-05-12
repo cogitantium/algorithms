@@ -9,7 +9,7 @@ def binary_search(array, left, right, value):
     :param left: lower bound
     :param right: upper bound
     :param value: the value being searched for
-    :return:
+    :return: the index of value being searched for, if present, else return None
     """
     # Trivial case - if bounds are equal, check if found, and return index, or fail
     if left == right:
