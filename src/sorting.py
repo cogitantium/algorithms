@@ -2,6 +2,7 @@ import random
 
 from src.algorithms.sorting import bubblesort, insertionsort
 from src.algorithms.sorting.mergesort import merge_sort
+from src.algorithms.sorting.selectionsort import selection_sort
 
 
 def setup_merge_sort(array):
@@ -49,3 +50,4 @@ def run_algorithm(algorithm):
 run_algorithm(bubblesort.bubble_sort)
 run_algorithm(insertionsort.insertion_sort)
 run_algorithm(merge_sort)
+run_algorithm(selection_sort)
